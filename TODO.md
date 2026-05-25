@@ -22,9 +22,9 @@ Alle inhaltlichen TODOs im Dokument selbst stehen als `\todo{}` im jeweiligen `.
 ## Vor der Abgabe
 
 - [ ] **`preamble.sty`** — `\usepackage[disable]{todonotes}` einkommentieren, um alle `\todo{}`-Boxen zu deaktivieren
-- [ ] **`preamble.sty`** — Bibliographiestil prüfen: aktuell `style=ieee`; Alternativen: `style=apa`, `style=authoryear`
 - [ ] **`main.tex`** — Alle auskommentierten Platzhalter-Includes entfernen
 - [ ] Sicherstellen, dass keine `\todo{}`-Boxen mehr im Dokument sichtbar sind (Kompilierung mit `[disable]` prüfen)
+- [ ] Sicherstellen, dass keine TODOS mehr in TODO.md offen sind
 
 ## Optionale Pakete (bei Bedarf in `preamble.sty` einkommentieren)
 
