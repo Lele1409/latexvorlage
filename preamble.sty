@@ -1,5 +1,6 @@
 % Sprachpaket und Worttrennung
 \usepackage[ngerman]{babel}
+\usepackage{csquotes} % von biblatex mit babel empfohlen; für \enquote{}
 
 % Zeichensatz
 \usepackage[utf8]{inputenc}
@@ -11,9 +12,13 @@
 \usepackage{graphicx}
 
 % Paket zur Erstellung von Gantt-Charts
-% Doku: 
+% Doku:
 % https://ctan.ebinger.cc/tex-archive/graphics/pgf/contrib/pgfgantt/pgfgantt-doc.pdf
 \usepackage{pgfgantt}
+
+% Paket zur Erstellung von Diagrammen (Balken, Linien, etc.)
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 % leicht anderes Abstrakt als normal
 % \usepackage{bookabstract}
@@ -29,12 +34,12 @@
 % \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 % pdf-Einstellungen
-% Angaben ggf. aktualisieren!
+% TODO: pdftitle, pdfsubject und pdfkeywords vor Abgabe aktualisieren
 \usepackage[
-pdftitle={PDF-Titel},
-pdfsubject={},
-pdfauthor={Mein Name},
-pdfkeywords={},  
+pdftitle={},        % TODO: Titel der Arbeit
+pdfsubject={},      % TODO: Thema / Fach
+pdfauthor={Leander Engel},
+pdfkeywords={},     % TODO: Schlüsselwörter (kommagetrennt)
 hidelinks % Links nicht einrahmen
 ]{hyperref}
 \usepackage[a-1b]{pdfx} % für PDF/A-1b - WICHITG! 
@@ -138,3 +143,12 @@ style=ieee,
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{0cm}{0cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% ~~~~~ Todo Markierungen ~~~~~
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Für die finale Abgabe alle Todos deaktivieren:
+% \usepackage[disable]{todonotes}
+\setlength{\marginparwidth}{2cm} % benötigt von todonotes
+\usepackage[colorinlistoftodos]{todonotes}
